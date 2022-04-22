@@ -393,7 +393,9 @@
             temp += "<td>" + element["email"] + "</td>";
             temp += "<td>" + element["desig"] + "</td>";
             temp += "<td>" + element["subject"] + "</td>";
-            temp += "<td>" + element["desc"] + "</td></tr>";
+            temp += "<td>" + element['desc'] + "</td>"
+            temp += "<td><button type='button' class='btn btn-danger'>Mark as Done</button></td>";
+            temp += "</tr>";
             document.getElementById('data').innerHTML += temp;
         });
 
