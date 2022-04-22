@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Datatable Jquery - Mazer Admin Dashboard</title>
-    
+    <title>Tickets</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -109,7 +109,7 @@
     </div>
 
     <!-- Basic Tables start -->
-    <section class="section">
+    <!-- <section class="section">
         <div class="card">
             <div class="card-header">
                 Jquery Datatable
@@ -365,8 +365,71 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
     <!-- Basic Tables end -->
+    <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Designation</th>
+              <th>Subject</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="data">
+            <script>
+                fetch("http://127.0.0.1:3000/api/getAll").then(
+  res => {
+    res.json().then(
+      data => {
+        console.log(data);
+        var lengg = data.length;
+        data.forEach(element => {
+            console.log(element)
+            temp = ''
+            temp += "<tr>";
+            temp += "<td>" + element["email"] + "</td>";
+            temp += "<td>" + element["desig"] + "</td>";
+            temp += "<td>" + element["subject"] + "</td>";
+            temp += "<td>" + element["desc"] + "</td></tr>";
+            document.getElementById('data').innerHTML += temp;
+        });
+
+        // if (data.data.length > 0) {
+
+        //   var temp = "";
+        //   data.data.forEach((itemData) => {
+        //     temp += "<tr>";
+        //     temp += "<td>" + itemData._id + "</td>";
+        //     temp += "<td>" + itemData.subject + "</td>";
+        //     temp += "<td>" + itemData.desc + "</td></tr>";
+        //   });
+        //   document.getElementById('data').innerHTML = temp;
+        // }
+      }
+    )
+  }
+)
+console.log(1);
+// function loadImage() {
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function() {
+//         console.log(00)
+//     if (this.readyState == 4 && this.status == 200) {
+//         var data = this.response;
+//         console.log(this.response);
+//         console.log("lmao")
+//     }
+// };
+//     xhttp.open("GET", "localhost:3000/api/getAll", true);
+//     xhttp.send();
+// }
+            </script>
+          </tbody>
+        </table>
+      </div>
 </div>
 
             <footer>
