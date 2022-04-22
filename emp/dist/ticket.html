@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Datatable Jquery - Mazer Admin Dashboard</title>
+    <!-- Favicons -->
+    <link href="assets/images/parchi.png" rel="icon" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+<!-- <link rel="stylesheet" href="assets/vendors/jquery-datatables/jquery.dataTables.min.css"> -->
+<link rel="stylesheet" href="assets/vendors/jquery-datatables/jquery.dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="assets/vendors/fontawesome/all.min.css">
+<style>
+    table.dataTable td{
+        padding: 15px 8px;
+    }
+    .fontawesome-icons .the-icon svg {
+        font-size: 24px;
+    }
+</style>
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header">
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <a href="index.html">parchi</a>
+            </div>
+            <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class="sidebar-title">Menu</li>
+            
+            <li
+                class="sidebar-item  ">
+                <a href="index.html" class='sidebar-link'>
+                    <i class="bi bi-grid-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="sidebar-title">  </li>
+
+        
+            
+            <li class="sidebar-title">Pages</li>
+            
+            <li
+            class="sidebar-item active ">
+            <a href="ticket.html" class='sidebar-link'>
+                <i class="bi bi-chat-dots-fill"></i>
+                <span>Ticket Status</span>
+            </a>
+
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            
+<div class="page-heading">
+    <div class="page-title">
+        <div class="row">
+            <div class="col-12 col-md-6 order-md-1 order-last">
+                <h3>TICKET STATUS</h3>
+                <p class="text-subtitle text-muted">For user to check their tickets</p>
+            </div>
+            <div class="col-12 col-md-6 order-md-2 order-first">
+                <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Basic Tables start -->
+    <section class="section">
+        <div class="card">
+            <div class="card-header">
+                Table of Ticket
+            </div>
+            <div class="card-body">
+                <table class="table" id="table1">
+                    <thead>
+                        <tr>
+                            <th>Query ID</th>
+                            <th>Date of raise</th>
+                            <th>Estimate Time</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12835</td>
+                            <td>12/04/22</td>
+                            <td>4 days</td>
+                            <td>IT</td>
+                            <td>
+                                <span class="badge bg-success">Resolved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>125835</td>
+                            <td>21/04/22</td>
+                            <td>4 days</td>
+                            <td>HR</td>
+                            <td>
+                                <span class="badge bg-success">Active</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>12935</td>
+                            <td>1/04/22</td>
+                            <td>7 days</td>
+                            <td>Maintainence</td>
+                            <td>
+                                <span class="badge bg-success">Resolved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>162935</td>
+                            <td>2/04/22</td>
+                            <td>7 days</td>
+                            <td>Maintainence</td>
+                            <td>
+                                <span class="badge bg-success">Moved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>120325</td>
+                            <td>1/02/22</td>
+                            <td>4 days</td>
+                            <td>Notice</td>
+                            <td>
+                                <span class="badge bg-success">Resolved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>120925</td>
+                            <td>1/01/22</td>
+                            <td>4 days</td>
+                            <td>HR</td>
+                            <td>
+                                <span class="badge bg-success">Resolved</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>120995</td>
+                            <td>20/04/22</td>
+                            <td>8 days</td>
+                            <td>Admin</td>
+                            <td>
+                                <span class="badge bg-success">Under Review</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>120992</td>
+                            <td>20/04/22</td>
+                            <td>8 days</td>
+                            <td>Admin</td>
+                            <td>
+                                <span class="badge bg-danger">Discarded</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    <!-- Basic Tables end -->
+</div>
+
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2021 &copy; BigHack</p>
+                    </div>
+                   
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+<script src="assets/vendors/jquery/jquery.min.js"></script>
+<script src="assets/vendors/jquery-datatables/jquery.dataTables.min.js"></script>
+<script src="assets/vendors/jquery-datatables/custom.jquery.dataTables.bootstrap5.min.js"></script>
+<script src="assets/vendors/fontawesome/all.min.js"></script>
+<script>
+    // Jquery Datatable
+    let jquery_datatable = $("#table1").DataTable()
+</script>
+
+    <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>

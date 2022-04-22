@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parchi</title>
+
+    <!-- Favicons -->
+    <!-- Favicons -->
+    <link href="assets/images/parchi.png" rel="icon" />
+    
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+<link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="assets/images/p.png" type="image/x-icon">
+</head>
+ 
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header">
+        <div class="d-flex justify-content-between">
+            <div class="logo">
+                <a href="index.html">parchi</a>
+            </div>
+            <div class="toggler">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class="sidebar-title">Menu</li>
+            
+            <li
+                class="sidebar-item active ">
+                <a href="index.html" class='sidebar-link'>
+                    <i class="bi bi-grid-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+           
+
+        
+            
+            <li class="sidebar-title">Pages</li>
+            
+            <li
+            class="sidebar-item  ">
+            <a href="ticket.html" class='sidebar-link'>
+                <i class="bi bi-chat-dots-fill"></i>
+                <span>Ticket Status</span>
+            </a>
+        </li>
+  
+        </ul>
+    </div>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            
+<div class="page-heading">
+    <h3>Ticket Statistics</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-12 col-lg-9">
+            <div class="row">
+                
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon blue">
+                                        <i class="iconly-boldProfile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Queries Submitted</h6>
+                                    <h6 class="font-extrabold mb-0">11</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body px-3 py-4-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="stats-icon green">
+                                        <i class="iconly-boldAdd-User"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h6 class="text-muted font-semibold">Queries Resolved</h6>
+                                    <h6 class="font-extrabold mb-0">7</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+            <div class="col-md-6 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Create a ticket to raise a query</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <!-- <form class="form-vertical"> -->
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="first-name-vertical">Email</label>
+                                                <input type="email" id="Email" class="form-control"
+                                                    name="fname" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="email-id-vertical">Designation</label>
+                                                <input type="text" id="Designation" class="form-control"
+                                                    name="email-id" placeholder="Designation">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="contact-info-vertical">Mobile</label>
+                                                <input type="number" id="Mobile" class="form-control"
+                                                    name="contact" placeholder="Mobile">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="password-vertical">Category</label>
+                                                <input type="text" id="Category" class="form-control"
+                                                    name="contact" placeholder="Category">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="password-vertical">Subject</label>
+                                                <input type="text" id="Subject" class="form-control"
+                                                    name="contact" placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="password-vertical">Description</label>
+                                                <input type="text" id="Description" class="form-control"
+                                                    name="contact" placeholder="Description">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="password-vertical">Keywords</label>
+                                                <input type="text" id="Keywords" class="form-control"
+                                                    name="contact" placeholder="Keywords">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <button class="btn btn-primary me-1 mb-1" onclick="addData()">Submit</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                </div>
+            </div>
+        </div>
+
+<footer>
+    <div class="footer clearfix mb-0 text-muted">
+        <div class="float-start">
+            <p>2021 &copy; BigHac</p>
+        </div>
+        
+    </div>
+</footer>
+</div>
+</div>
+<script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/mazer.js"></script>
+<script>
+    function addData(){
+        console.log(10)
+        const data = { 
+            "email": document.getElementById('Email').value,
+            "desig": document.getElementById('Designation').value,
+            "phone": document.getElementById('Mobile').value,
+            "cat": document.getElementById('Category').value,
+            "subject": document.getElementById('Subject').value,
+            "desc": document.getElementById('Description').value, 
+            "keywords": document.getElementById('Keywords').value 
+         };
+        //  console.log(document.getElementById('Email').value);
+        fetch('http://127.0.0.1:3000/api/post', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+        })
+        .then(response => response.json())
+        .then(data => {
+        console.log('Success:', data);
+        alert("Ticket Registered")
+        })
+        .catch((error) => {
+        console.error('Error:', error);
+        });
+    }
+</script>
+</body>
+
+</html>
